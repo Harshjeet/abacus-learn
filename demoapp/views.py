@@ -153,3 +153,9 @@ def home(request):
 class ProfileAPI(APIView):
     def get(self, request):
         return Response({"user": request.user.username})
+
+
+# create new things for devops class
+
+def new_devops(request):
+    return HttpResponse("This is new devops class")
