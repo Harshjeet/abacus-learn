@@ -18,6 +18,9 @@ from rest_framework.response import Response
 def hello(request):
     return HttpResponse("Hello World")
 
+def demo(request):
+    return HttpResponse("this is demo for git purpose")
+
 @csrf_exempt
 def hello_post_api(request):
 

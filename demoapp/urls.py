@@ -15,6 +15,7 @@ router.register(r'users', UserSerializerView)
 
 urlpatterns = [
     path('', views.hello, name='hello'),
+    path('demo', views.demo, name='demo'),
     path('hello_post', views.hello_post_api, name='hello_post_api'),
     path('echo', views.echo, name='echo'),
     path('update_echo', views.update_echo, name='update_echo'),
