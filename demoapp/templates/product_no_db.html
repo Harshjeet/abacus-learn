@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Simple Products</title></head>
+<body>
+    <h1>Products (No Model!)</h1>
+    <ul>
+        {% for product in products %}
+        <li>
+            <strong>{{ product.name }}</strong><br>
+            ₹{{ product.price }}<br>
+            {{ product.description }}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
